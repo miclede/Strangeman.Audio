@@ -254,7 +254,7 @@ namespace AudioHelper.Editor
             if (IsSetupCompleted())
                 return;
 
-            if (AssetDatabase.IsValidFolder("Packages/com.strangemangames.audiohelper/"))
+            if (AssetDatabase.IsValidFolder("Packages/com.strangeman.utility.audio/"))
             {
                 Debug.Log("Package found, proceeding with helper setup.");
             }
