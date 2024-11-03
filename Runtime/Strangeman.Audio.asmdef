@@ -1,5 +1,5 @@
 {
-    "name": "com.strangeman.utility.audio",
+    "name": "com.strangeman.audio",
     "rootNamespace": "AudioHelper",
     "references": [
         "GUID:a5358283307d1a149b9f3266af67608d"

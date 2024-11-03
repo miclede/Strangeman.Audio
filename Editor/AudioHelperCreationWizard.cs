@@ -12,9 +12,9 @@ namespace AudioHelper.Editor
     /// </summary>
     public class AudioHelperCreationWizard : EditorWindow
     {
-        string _audioEmitterPath = "Packages/com.strangemangames.audiohelper/AudioHelper/Prefabs/AudioEmitter.prefab";
-        string _audioManagerPath = "Packages/com.strangemangames.audiohelper/AudioHelper/Prefabs/AudioManager.prefab";
-        string _exampleScenePath = "Packages/com.strangemangames.audiohelper/AudioHelper/Example/Scene/AudioHelperExampleScene.unity";
+        string _audioEmitterPath = "Packages/com.strangeman.audio/Prefabs/AudioEmitter.prefab";
+        string _audioManagerPath = "Packages/com.strangeman.audio/Prefabs/AudioManager.prefab";
+        string _exampleScenePath = "Packages/com.strangeman.audio/Example/Scene/AudioHelperExampleScene.unity";
 
         private static string _projectFolderPath = "";
 
@@ -254,7 +254,7 @@ namespace AudioHelper.Editor
             if (IsSetupCompleted())
                 return;
 
-            if (AssetDatabase.IsValidFolder("Packages/com.strangeman.utility.audio/"))
+            if (AssetDatabase.IsValidFolder("Packages/com.strangeman.audio/"))
             {
                 Debug.Log("Package found, proceeding with helper setup.");
             }

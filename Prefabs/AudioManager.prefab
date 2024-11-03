@@ -41,7 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8299901642424630582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dc443e0af7c1c74aac6db1478afb7cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cc45daddcdfe7d4f8d0380a7331ff3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioConfig: {fileID: 11400000, guid: b0b35b2a5a8b58042a6b64abc8ad935e, type: 2}
+  _audioConfig: {fileID: 0}

@@ -30,7 +30,8 @@ namespace AudioHelper.Core
                 return;
             }
 
-            if (_audioConfig.AllowsAudioOnLoad.FirstOrDefault(x => x.SceneName == scene.name) == default)
+            if (_audioConfig.AllowsAudioOnLoad.Count > 0
+                && _audioConfig.AllowsAudioOnLoad.FirstOrDefault(x => x.SceneName == scene.name) == default)
             {
                 return;
             }

@@ -21,7 +21,7 @@ Add to Unity from Package Manager:
 
 Step 1.
 ```
-https://github.com/miclede/Strangeman.Utils.git
+https://github.com/miclede/Strangeman.Core.git
 ```
 Step 2.
 ```
@@ -44,7 +44,7 @@ If you are having issues viewing the example scene through the package directory
 
 [InstallationBadge]: https://img.shields.io/badge/Installation-red
 [WikiBadge]: https://img.shields.io/badge/Documentation-purple
-[UtilsBadge]: https://img.shields.io/badge/Strangeman.Utils-darkred
+[UtilsBadge]: https://img.shields.io/badge/Strangeman.Core-darkred
 
 [WikiLink]: https://github.com/miclede/Strangeman.AudioHelper/wiki
-[UtilsLink]: https://github.com/miclede/Strangeman.Utils
+[UtilsLink]: https://github.com/miclede/Strangeman.Core

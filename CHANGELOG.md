@@ -1,3 +1,7 @@
+## [1.3.3] 2024-11-02
+### Bugfix: Audio Creation Wizard
+- Fixed directory locations
+
 ## [1.3.2] 2024-11-01
 ### Organization Update: Packaging & Folders
 - Updating Package information and folder structure
