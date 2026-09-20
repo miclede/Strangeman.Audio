@@ -1,6 +1,7 @@
 using Strangeman.Utils;
 using System;
 using System.Collections.Generic;
+using Strangeman.Utils.Scene;
 using UnityEngine;
 
 namespace AudioHelper.Core

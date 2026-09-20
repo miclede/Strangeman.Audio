@@ -1,3 +1,4 @@
+using Strangeman.Utils;
 using UnityEngine;
 using UnityEngine.Audio;
 using Strangeman.Utils.Attributes;
@@ -22,14 +23,14 @@ namespace AudioHelper.Core
         [SerializeField, Range(0, 256)] private int _priority = 128;
 
         // Adjustable Ranges
-        [SerializeField, MinMaxSlider(0, 1)] private MinMaxSliderValue _volume = 1f;
-        [SerializeField, MinMaxSlider(-3, 3)] private MinMaxSliderValue _pitch = 1f;
-        [SerializeField, MinMaxSlider(-1, 1)] private MinMaxSliderValue _stereoPan = 0;
-        [SerializeField, MinMaxSlider(0, 1)] private MinMaxSliderValue _spatialBlend = 0;
-        [SerializeField, MinMaxSlider(0, 1.1f)] private MinMaxSliderValue _reverbZoneMix = 1f;
+        [SerializeField, MinMaxSlider(0, 1)] private MinMaxValue _volume = 1f;
+        [SerializeField, MinMaxSlider(-3, 3)] private MinMaxValue _pitch = 1f;
+        [SerializeField, MinMaxSlider(-1, 1)] private MinMaxValue _stereoPan = 0;
+        [SerializeField, MinMaxSlider(0, 1)] private MinMaxValue _spatialBlend = 0;
+        [SerializeField, MinMaxSlider(0, 1.1f)] private MinMaxValue _reverbZoneMix = 1f;
 
         // Spatial settings and Rolloff
-        [SerializeField, MinMaxSlider(0, 5)] private MinMaxSliderValue _dopplerLevel = 1;
+        [SerializeField, MinMaxSlider(0, 5)] private MinMaxValue _dopplerLevel = 1;
         [SerializeField, Range(0, 360)] private int _spread = 0;
         [SerializeField] private AudioRolloffMode _volumeRollOffMode;
         [SerializeField, Conditional(true, nameof(IsCustomRolloffSelected))] private AnimationCurve _customCurve = new AnimationCurve(new Keyframe(0, 1), new Keyframe(10, 0));
@@ -67,7 +68,7 @@ namespace AudioHelper.Core
         public bool IgnoreAudioListenerPause => _ignoreAudioListenerPause;
         #endregion
 
-        private float SliderReturnValue(MinMaxSliderValue sliderValue) => _frequentAudio ? Random.Range(sliderValue.MinSliderValue, sliderValue.MaxSliderValue) : sliderValue;
+        private float SliderReturnValue(MinMaxValue sliderValue) => _frequentAudio ? Random.Range(sliderValue.minValue, sliderValue.maxValue) : sliderValue;
 
         private bool IsCustomRolloffSelected() => _volumeRollOffMode is AudioRolloffMode.Custom;
     }
